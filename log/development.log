@@ -35,3 +35,77 @@ Migrating to CreateUsers (20201205054559)
   ↳ bin/rails:9
   [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+  [1m[35m (26.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (45.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mb@mb.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (57.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "mb@mb.com"], ["name", "Marquis"], ["password_digest", "$2a$12$MUc2VAYwHOEZkoTHnhCDJuWQT/bQrc8M1V9rvrEjATJBDpkR0CJ8."], ["session_token", "t7VkuEDT3y4193BDVSuBoA"], ["created_at", "2020-12-05 21:11:40.993298"], ["updated_at", "2020-12-05 21:11:40.993298"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/" for ::1 at 2020-12-05 14:12:09 -0700
+  [1m[35m (20.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Marquis/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+
+ActionController::RoutingError - uninitialized constant StatisPagesController:
+
+Started POST "/__better_errors/1a98d88b768414f1/variables" for ::1 at 2020-12-05 14:12:10 -0700
+Started GET "/" for ::1 at 2020-12-05 14:14:01 -0700
+
+ActionController::RoutingError - uninitialized constant StatisPagesController:
+
+Started POST "/__better_errors/7b7a46aabfe63066/variables" for ::1 at 2020-12-05 14:14:01 -0700
+Started GET "/" for ::1 at 2020-12-05 14:14:55 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Marquis/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+
+ActionController::RoutingError - uninitialized constant StatisPagesController:
+
+Started POST "/__better_errors/4070a8a5b8aedb31/variables" for ::1 at 2020-12-05 14:14:56 -0700
+Started GET "/" for ::1 at 2020-12-05 14:15:51 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 873ms (Views: 867.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/1" for ::1 at 2020-12-05 14:16:23 -0700
+Processing by Api::UsersController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 404 Not Found in 35ms (ActiveRecord: 17.3ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find User without an ID:
+  app/controllers/api/users_controller.rb:8:in `show'
+
+Started POST "/__better_errors/ea48a1c96f8f0520/variables" for ::1 at 2020-12-05 14:16:24 -0700
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/api/users/1" for ::1 at 2020-12-05 14:23:05 -0700
+Processing by Api::UsersController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed   in 32362ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/1" for ::1 at 2020-12-05 14:24:15 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Marquis/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by Api::UsersController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 7063ms (ActiveRecord: 0.0ms)
+
+
+
+SystemExit - exit:
+  (byebug):1:in `show'
+  app/controllers/api/users_controller.rb:9:in `show'
+
+Started POST "/__better_errors/9e3eeda1b45231aa/variables" for ::1 at 2020-12-05 14:24:23 -0700
+Started GET "/api/users/1" for ::1 at 2020-12-05 14:24:32 -0700
+Processing by Api::UsersController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:8
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (2.5ms)
+  Rendered api/users/show.json.jbuilder (17.4ms)
+Completed 200 OK in 319ms (Views: 70.7ms | ActiveRecord: 23.1ms)
+
+
