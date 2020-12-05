@@ -109,3 +109,84 @@ Processing by Api::UsersController#show as JSON
 Completed 200 OK in 319ms (Views: 70.7ms | ActiveRecord: 23.1ms)
 
 
+Started GET "/" for ::1 at 2020-12-05 15:52:14 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (6.0ms)
+Started GET "/" for ::1 at 2020-12-05 15:52:17 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 8037ms (ActiveRecord: 0.0ms)
+
+
+Completed 500 Internal Server Error in 4493ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Marquis/Desktop/digital_divide/app/assets/config
+  /Users/Marquis/Desktop/digital_divide/app/assets/images
+  /Users/Marquis/Desktop/digital_divide/app/assets/javascripts
+  /Users/Marquis/Desktop/digital_divide/app/assets/stylesheets
+  /Users/Marquis/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Marquis/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/Marquis/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/Marquis/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/Marquis/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/Marquis/Desktop/digital_divide/node_modules:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___913018345962478745_70364345515920'
+  app/controllers/static_pages_controller.rb:3:in `root'
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Marquis/Desktop/digital_divide/app/assets/config
+  /Users/Marquis/Desktop/digital_divide/app/assets/images
+  /Users/Marquis/Desktop/digital_divide/app/assets/javascripts
+  /Users/Marquis/Desktop/digital_divide/app/assets/stylesheets
+  /Users/Marquis/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Marquis/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/Marquis/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/Marquis/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/Marquis/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/Marquis/Desktop/digital_divide/node_modules:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___913018345962478745_70364313732720'
+  app/controllers/static_pages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/2fe732ada1cf38dc/variables" for ::1 at 2020-12-05 15:52:25 -0700
+Started POST "/__better_errors/2fe732ada1cf38dc/variables" for ::1 at 2020-12-05 15:53:30 -0700
+Started GET "/" for ::1 at 2020-12-05 15:55:53 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 320ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Marquis/Desktop/digital_divide/app/assets/config
+  /Users/Marquis/Desktop/digital_divide/app/assets/images
+  /Users/Marquis/Desktop/digital_divide/app/assets/javascripts
+  /Users/Marquis/Desktop/digital_divide/app/assets/stylesheets
+  /Users/Marquis/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Marquis/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/Marquis/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/Marquis/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/Marquis/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/Marquis/Desktop/digital_divide/node_modules:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___913018345962478745_70364370587100'
+  app/controllers/static_pages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/d268a45c766db98e/variables" for ::1 at 2020-12-05 15:55:54 -0700
+Started GET "/" for ::1 at 2020-12-05 15:56:45 -0700
+  [1m[35m (42.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Marquis/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 4329ms (Views: 4329.0ms | ActiveRecord: 0.0ms)
+
+
