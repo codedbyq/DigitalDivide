@@ -255,3 +255,17 @@ Processing by Api::UsersController#index as JSON
 Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for ::1 at 2020-12-05 19:38:05 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 460ms (Views: 459.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-05 19:40:57 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 528ms (Views: 526.8ms | ActiveRecord: 0.0ms)
+
+
