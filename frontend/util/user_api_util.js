@@ -1,6 +1,6 @@
-// ajax calls to fetch users
+// ajax calls to get users
 
-export const fetchUser = userId => (
+export const getUser = userId => (
     $.ajax({
         method: 'get',
         url: `/api/users/${userId}`,
@@ -8,7 +8,7 @@ export const fetchUser = userId => (
     })
 );
 
-export const fetchAllUsers = () => (
+export const getAllUsers = () => (
     $.ajax({
         method: 'get',
         url: '/api/users'
