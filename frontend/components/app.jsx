@@ -1,12 +1,13 @@
 import React from 'react';
 import UserShowContainer from './users/user_show_container';
+import NavbarContainer from './nav/navbar_container';
 
 const App = () => (
     <div>
         <h1>Digital Divider</h1>
         <div>
-            {/* <NavbarContainer /> */}
-            <UserShowContainer />
+            <NavbarContainer />
+            {/* <UserShowContainer /> */}
         </div>
     </div>
 );

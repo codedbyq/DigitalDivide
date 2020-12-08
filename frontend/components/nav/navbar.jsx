@@ -5,16 +5,18 @@ const Navbar = (props) => {
 
     const buttons = props.currentUser ? (
         <>
+            <button>Log Tut</button>
+        </>
+    ) : (
+        <>
             <NavLink to=''>Sign In</NavLink>
             <NavLink to=''>Sign Up</NavLink>
         </>
-    ) : (
-        <button>Log Tut</button>
-    )
+        )
 
     return (
         <div>
-            
+            {buttons}
         </div>
     )
 }
